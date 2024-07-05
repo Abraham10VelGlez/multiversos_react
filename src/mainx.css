@@ -1,0 +1,21 @@
+.world{
+    background:black;
+}
+  .classdata_studioa{
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .classdata_studioa_backgroudavg{
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:#000;
+  }
+  .CanvasX{
+    position: fixed !important;
+    inset: 0 !important;        
+  }
