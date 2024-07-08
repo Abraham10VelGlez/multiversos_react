@@ -11,7 +11,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import {  useFrame } from '@react-three/fiber'
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('../public/scene.gltf')
+  const { nodes, materials } = useGLTF('/scene.gltf')
   const meshRef = useRef()
   
   useFrame((state, delta) => (meshRef.current.rotation.y += delta/10))  
