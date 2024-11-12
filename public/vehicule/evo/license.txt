@@ -1,0 +1,11 @@
+Model Information:
+* title:	Evo Rally Car
+* source:	https://sketchfab.com/3d-models/evo-rally-car-9599f1489f71468ba1c057724b0a167b
+* author:	Mateusz Woliński (https://sketchfab.com/jeandiz)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Evo Rally Car" (https://sketchfab.com/3d-models/evo-rally-car-9599f1489f71468ba1c057724b0a167b) by Mateusz Woliński (https://sketchfab.com/jeandiz) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

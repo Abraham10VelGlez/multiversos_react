@@ -5,6 +5,9 @@ import { useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 import Model from './Scene2';
 import Scene3 from './Scene3';
+import Scene4 from './Scene4';
+import Scene5 from './Scene5';
+import Scene6 from './Scene6';
 
 
 
@@ -24,7 +27,10 @@ export default function Component10() {
             </GizmoHelper>
 
             <Suspense fallback={null}>
-                <Scene3></Scene3>
+                <Scene3 ></Scene3>
+                <Scene4 position={[20, 0, 0]}></Scene4>
+                <Scene5 position={[-20, 0, 0]}></Scene5>
+                <Scene6 position={[0, 0, 40]}></Scene6>
             </Suspense>
 
 

@@ -6,7 +6,7 @@ import { useFrame } from '@react-three/fiber'
 export default function Scene3(props) {
 
     const group = useRef()
-    const { nodes, materials, scene, animations } = useGLTF('/vehicule/scene.gltf')
+    const { nodes, materials, scene, animations } = useGLTF('/vehicule/bmw120/scene.gltf')
     const { actions, names } = useAnimations(animations, group)
     console.log(names);
 
@@ -24,7 +24,7 @@ export default function Scene3(props) {
 
 
     const meshRef = useRef()
-    useFrame((state, delta) => (meshRef.current.rotation.x += delta / 10))
+    //useFrame((state, delta) => (meshRef.current.rotation.x += delta / 10))
 
 
     return (
@@ -35,4 +35,4 @@ export default function Scene3(props) {
     )
 }
 
-useGLTF.preload('../public/vehicule/scene.gltf')
+useGLTF.preload('../public/vehicule/bmw120/scene.gltf')
