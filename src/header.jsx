@@ -10,6 +10,7 @@ import Componente7 from './component7';
 import Componente8 from './component8';
 import Componente9 from './component9';
 import Component10 from './component10';
+import Component11 from './component11';
 export default function App() {
   return (   
      /*<Router>*/        
@@ -25,6 +26,7 @@ export default function App() {
        <Route path="/world8" element={ <Componente8/> } />
        <Route path="/world9" element={ <Componente9/> } />
        <Route path="/world11" element={ <Component10></Component10> } />
+       <Route path="/world10" element={ <Component11></Component11> } />
        {/* comodin para dar por defecto la pagina que no sirve */}
        <Route path="*" element={<NotFound></NotFound>} />
      </Routes>
@@ -51,8 +53,8 @@ function Home() {
     <li><Link to='/world7'>MUNDO 7</Link></li>
     <li><Link to='/world8'>MUNDO 8 Buscador de gifs</Link></li>
     <li><Link to='/world11'>MUNDO 9 DE MOVIMIENTOS</Link></li>
-    <li><Link to='/world9'>MUNDO  Fronted con backend ExpressJS</Link></li>
-    <li><Link to='/world10'>MUNDO  Fronted con backend Laravel 10</Link></li>
+    <li><Link to='/world9'>ESTA EN UN PROYECTO APARTE MUNDO  Fronted con backend ExpressJS</Link></li>
+    <li><Link to='/world10'>MUNDO 10</Link></li>
   </ul>
   </>);
 }

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Emp drone
+* source:	https://sketchfab.com/3d-models/emp-drone-72b82666a977446da8093779858deaa2
+* author:	rahimjonovsardorbek (https://sketchfab.com/SardorbekRahimjonov)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Emp drone" (https://sketchfab.com/3d-models/emp-drone-72b82666a977446da8093779858deaa2) by rahimjonovsardorbek (https://sketchfab.com/SardorbekRahimjonov) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
