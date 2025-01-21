@@ -9,7 +9,7 @@ https://github.com/pmndrs/gltfjsx
 // */
 
 export function Citygreen(props) {
-    const { nodes, materials } = useGLTF('../public/textures_citypart/scene.gltf')
+    const { nodes, materials } = useGLTF('textures_citypart/scene.gltf')
     return (
         <group {...props} dispose={null}>
             <group rotation={[-Math.PI / 2, 0, 0]} scale={0.637}>
@@ -1143,4 +1143,4 @@ export function Citygreen(props) {
     )
 }
 
-useGLTF.preload('../public/textures_citypart/scene.gltf')
+useGLTF.preload('textures_citypart/scene.gltf')

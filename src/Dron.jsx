@@ -4,7 +4,7 @@ import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
 const Dron = forwardRef(({ props }, ref) => {
-    const { nodes, materials } = useGLTF('../public/texture_dron/scene.gltf');
+    const { nodes, materials } = useGLTF('texture_dron/scene.gltf');
     const meshRef = useRef();
 
     const [movement, setMovement] = useState({
@@ -324,6 +324,6 @@ const Dron = forwardRef(({ props }, ref) => {
     );
 });
 
-useGLTF.preload('../public/texture_dron/scene.gltf');
+useGLTF.preload('texture_dron/scene.gltf');
 
 export { Dron };
