@@ -48,7 +48,7 @@ VERIFICAR SI MI TEXTURAS SE VEN, O ESTAN EN LA RUTA CORRECTA
 
             <directionalLight
                 castShadow
-                color={"#f3d29a"}
+                color={"#8CD29A"}
                 intensity={2}
                 position={[10, 5, 4]}
                 shadow-bias={-0.0005}

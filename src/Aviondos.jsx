@@ -59,6 +59,7 @@ export function Aviondos(props) {
             .multiply(new Matrix4().makeRotationX(-0.2))
             .multiply(
                 // para la avioneta
+                //new Matrix4().makeTranslation(0, 0.015, 0.3)
                 new Matrix4().makeTranslation(0, 0.015, 0.3)
                 // para jet
                 //new Matrix4().makeTranslation(10, 100.015, 0.3)
@@ -84,16 +85,16 @@ export function Aviondos(props) {
                     <mesh geometry={nodes.helix.geometry} material={materials['Material.005']} ref={helixMeshRef} />
                 </group>
             </group>
-            {/*
+            {/* 
             <group ref={groupRef}>
-                <group  {...props} dispose={null} scale={5} rotation={[-Math.PI / 2, 0, 0]}>
+                <group  {...props} dispose={null} scale={0.01} rotation={[-Math.PI / 2, 0, 0]}>
                     <mesh
                         castShadow
                         receiveShadow
                         geometry={nodes.Object_2.geometry}
                         material={materials.blinn1SG}
-                    ///rotacion de la elize
-                    //ref={helixMeshRef}                        
+                        ///rotacion de la elize
+                        ref={helixMeshRef}
                     />
                     <mesh
                         castShadow
@@ -134,8 +135,8 @@ export function Aviondos(props) {
                     />
                 </group>
             </group>
-*/}
 
+*/}
 
         </>
     )

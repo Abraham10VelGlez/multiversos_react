@@ -9,10 +9,10 @@ export function Mount(props) {
     return [
       new MeshStandardMaterial({
         envMapIntensity: 0,
-        color: new Color("#ea6619"),
+        color: new Color("#FFDD00"),
         roughness: 0,
         metalness: 0,
-        emissive: new Color("#f6390f").multiplyScalar(1),
+        emissive: new Color("#54A2FF").multiplyScalar(1),
       }),
       <MeshReflectorMaterial
         transparent={true}
@@ -42,7 +42,7 @@ export function Mount(props) {
     landscapeMat.envMapIntensity = 0.75;
 
     const treesMat = materials["Material.008"];
-    treesMat.color = new Color("#2f2f13");
+    treesMat.color = new Color("#228B22");
     treesMat.envMapIntensity = 0.3;
     treesMat.roughness = 1;
     treesMat.metalness = 0;
