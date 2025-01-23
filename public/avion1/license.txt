@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tupolev Tu-142M Bomber Plane
+* source:	https://sketchfab.com/3d-models/tupolev-tu-142m-bomber-plane-65c8c982d61048f594e0262f73437021
+* author:	Muhamad Mirza Arrafi (https://sketchfab.com/nazidefenseforceofficial)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tupolev Tu-142M Bomber Plane" (https://sketchfab.com/3d-models/tupolev-tu-142m-bomber-plane-65c8c982d61048f594e0262f73437021) by Muhamad Mirza Arrafi (https://sketchfab.com/nazidefenseforceofficial) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -3,6 +3,7 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls, GizmoHelper, GizmoViewport, Environment } from '@react-three/drei';
 import { Citygreen } from './Citygreen';
 import { Dron } from './Dron';
+import { Avionuno } from './Avionuno';
 
 export default function Component11() {
     const dronRef = useRef(); // Referencia al Dron
@@ -19,7 +20,7 @@ export default function Component11() {
                 camera.position.set(
                     dronPosition.x,
                     dronPosition.y + 15, // altura de la cámara
-                    dronPosition.z + 10  // distancia detrás del dron
+                    dronPosition.z + 50  // distancia detrás del dron
                 );
 
                 // Hacer que la cámara mire hacia el Dron
@@ -34,28 +35,32 @@ export default function Component11() {
 
 
     return (
-        <Canvas className="CanvasX" camera={{ position: [0, 15, 40], fov: 80 }}>
+        <Canvas className="CanvasX" camera={{ position: [-60, 180, 200], fov: 80 }}>
             <ambientLight intensity={0.5} />
             <directionalLight position={[10, 10, 5]} intensity={1} />
             <Environment preset="city" metalness={0} roughness={0} />
             <GizmoHelper alignment="bottom-right" margin={[100, 100]}>
                 <GizmoViewport axisColors={['red', 'green', 'blue']} labelColor="black" />
             </GizmoHelper>
-
+            <color attach="background" args={['#c4e7f1']} />
             <CameraFollowDron targetRef={dronRef} />
 
 
-            {/* Modelo Dron con referencia */}
-            <Suspense fallback={null}>
-                {/* Cámara que sigue al Dron */}
+            {/* Modelo Dron con referencia 
+            
+            <Avionuno position={[0, 0, 0]} scale={80} ></Avionuno>
+            */}
+            <Dron ref={dronRef} position={[0, 50, 0]} scale={10} />
+            
 
-                <Dron ref={dronRef} position={[10,0, 0]} scale={10} />
-            </Suspense>
+            {/*<Suspense fallback={null}>
+                 Cámara que sigue al Dron </Suspense>*/}
             {/*
       <Citygreen />
        <Citygreen   scale={10}  />
       Controles */}
-            <Citygreen   scale={10}  />
+            <Citygreen scale={10} />
+
             <OrbitControls />
         </Canvas>
     );

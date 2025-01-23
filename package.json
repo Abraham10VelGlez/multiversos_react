@@ -10,8 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-three/drei": "^9.120.4",
+    "@react-three/drei": "^9.121.3",
     "@react-three/fiber": "^8.17.10",
+    "@react-three/postprocessing": "^2.19.0",
     "@types/three": "^0.164.0",
     "framer-motion": "^11.2.5",
     "lamina": "^1.1.23",
@@ -20,7 +21,7 @@
     "react-router": "6",
     "react-router-dom": "6",
     "react-three-fiber": "^6.0.13",
-    "three": "^0.164.1"
+    "three": "^0.172.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
