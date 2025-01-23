@@ -58,7 +58,10 @@ export function Aviondos(props) {
             .multiply(delayedRotMatrix)
             .multiply(new Matrix4().makeRotationX(-0.2))
             .multiply(
-                new Matrix4().makeTranslation(0, 0.015, 0.3)
+                // para la avioneta
+                //new Matrix4().makeTranslation(0, 0.015, 0.3)
+                // para jet
+                new Matrix4().makeTranslation(10, 100.015, 0.3)
             );
 
         camera.matrixAutoUpdate = false;
@@ -83,14 +86,14 @@ export function Aviondos(props) {
             </group>
  */}
             <group ref={groupRef}>
-                <group  {...props} dispose={null} scale={5} rotation={[-Math.PI / 2, -Math.PI/2, 0]}>
+                <group  {...props} dispose={null} scale={5} rotation={[-Math.PI / 2, 0, 0]}>
                     <mesh
                         castShadow
                         receiveShadow
                         geometry={nodes.Object_2.geometry}
                         material={materials.blinn1SG}
-                        ///rotacion de la elize
-                        //ref={helixMeshRef}                        
+                    ///rotacion de la elize
+                    //ref={helixMeshRef}                        
                     />
                     <mesh
                         castShadow
