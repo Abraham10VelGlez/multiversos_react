@@ -13,13 +13,13 @@ const delayedRotMatrix = new Matrix4();
 const delayedQuaternion = new Quaternion();
 
 export function Aviondos(props) {
-    //const { nodes, materials } = useGLTF('avion2/airplane.glb');
-    const { nodes, materials } = useGLTF('avion3/a-10_thunderbolt_ii_warthog_plane__avion.glb');
-    console.log(nodes);
+    const { nodes, materials } = useGLTF('avion2/airplane.glb');
+    //const { nodes, materials } = useGLTF('avion3/a-10_thunderbolt_ii_warthog_plane__avion.glb');
+    //console.log(nodes);
 
     const groupRef = useRef();
     ///rotacion de la elize
-    //const helixMeshRef = useRef();
+    const helixMeshRef = useRef();
 
     useFrame(({ camera }) => {
         updatePlaneAxis(x, y, z, planePosition, camera);
@@ -59,9 +59,9 @@ export function Aviondos(props) {
             .multiply(new Matrix4().makeRotationX(-0.2))
             .multiply(
                 // para la avioneta
-                //new Matrix4().makeTranslation(0, 0.015, 0.3)
+                new Matrix4().makeTranslation(0, 0.015, 0.3)
                 // para jet
-                new Matrix4().makeTranslation(10, 100.015, 0.3)
+                //new Matrix4().makeTranslation(10, 100.015, 0.3)
             );
 
         camera.matrixAutoUpdate = false;
@@ -70,13 +70,13 @@ export function Aviondos(props) {
 
 
         ///rotacion de la elize
-        //helixMeshRef.current.rotation.z -= 1.0;
+        helixMeshRef.current.rotation.z -= 1.0;
     });
 
     return (
         <>
 
-            {/*
+
             <group ref={groupRef}>
                 <group {...props} dispose={null} scale={0.01} rotation-y={Math.PI}>
                     <mesh geometry={nodes.supports.geometry} material={materials['Material.004']} />
@@ -84,7 +84,7 @@ export function Aviondos(props) {
                     <mesh geometry={nodes.helix.geometry} material={materials['Material.005']} ref={helixMeshRef} />
                 </group>
             </group>
- */}
+            {/*
             <group ref={groupRef}>
                 <group  {...props} dispose={null} scale={5} rotation={[-Math.PI / 2, 0, 0]}>
                     <mesh
@@ -134,12 +134,12 @@ export function Aviondos(props) {
                     />
                 </group>
             </group>
-
+*/}
 
 
         </>
     )
 }
 
-//useGLTF.preload('avion2/airplane.glb');
-useGLTF.preload('avion3/a-10_thunderbolt_ii_warthog_plane__avion.glb');
+useGLTF.preload('avion2/airplane.glb');
+//useGLTF.preload('avion3/a-10_thunderbolt_ii_warthog_plane__avion.glb');

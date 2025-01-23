@@ -9,28 +9,44 @@ import { Dron } from './Dron';
 import { Avionuno } from './Avionuno';
 import * as THREE from 'three';
 import { Aviondos } from "./Aviondos";
+import { Mount } from "./Mount";
+import { SphereEnv } from "./SphereEnv";
+import { MotionBlur } from "./MotionBlur";
 
 
 export default function Component12() {
 
+/*
+VERIFICAR SI MI TEXTURAS SE VEN, O ESTAN EN LA RUTA CORRECTA
+    fetch("textures2/envmap.hdr")
+        .then((response) => {
+            if (response.ok) {
+                console.log("File loaded successfully:", response);
+            } else {
+                console.error("Failed to load file:", response.status, response.statusText);
+            }
+        })
+        .catch((error) => console.error("Error fetching file:", error));
+ */
+
+
     return (
-        <Canvas className="CanvasX" camera={{ position: [-60, 180, 200], fov: 80 }}
+        <Canvas shadows className="CanvasX"
+        // camera={{ position: [-60, 180, 200], fov: 80 }}
         >
-            <Environment background={true} files={"textures2/envmap.hdr"} />
-            
+            <SphereEnv />
+            <Environment
+                background={false}
+                files={"textures2/envmap.hdr"}                
+            />
+
+
 
             <PerspectiveCamera makeDefault position={[0, 10, 10]} />
-            
+            <Mount />
+            <Aviondos />
 
-         
-          
-
-
-            <Aviondos></Aviondos>
-
-
-            
-               <directionalLight
+            <directionalLight
                 castShadow
                 color={"#f3d29a"}
                 intensity={2}
@@ -47,7 +63,7 @@ export default function Component12() {
             />
 
             <EffectComposer>
-
+                <MotionBlur />
                 <HueSaturation
                     blendFunction={BlendFunction.NORMAL} // blend mode
                     hue={-0.15} // hue in radians
@@ -56,7 +72,7 @@ export default function Component12() {
             </EffectComposer>
 
 
-         
+
         </Canvas >
     );
 }
