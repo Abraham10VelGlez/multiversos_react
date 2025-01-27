@@ -12,6 +12,7 @@ import { Aviondos } from "./Aviondos";
 import { Mount } from "./Mount";
 import { SphereEnv } from "./SphereEnv";
 import { MotionBlur } from "./MotionBlur";
+import { Targets } from "./Targets";
 
 
 export default function Component12() {
@@ -45,6 +46,7 @@ VERIFICAR SI MI TEXTURAS SE VEN, O ESTAN EN LA RUTA CORRECTA
             <PerspectiveCamera makeDefault position={[0, 10, 10]} />
             <Mount />
             <Aviondos />
+            <Targets />
 
             <directionalLight
                 castShadow

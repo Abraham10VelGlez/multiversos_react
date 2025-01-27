@@ -67,9 +67,11 @@ export function updatePlaneAxis(x, y, z, planePosition, camera) {
 
 
   // w position & velocity
-  if (controls.shift) {
+  if (controls.shift) {        
     turbo += 0.025;
+    console.log("con Turbo:" + turbo );
   } else {
+    console.log("Sin Turbo:" + turbo );
     turbo *= 0.95;
   }
   turbo = Math.min(Math.max(turbo, 0), 1);
