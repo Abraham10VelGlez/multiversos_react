@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import {  useFrame } from '@react-three/fiber'
 export default function Modeloearth(props) {
-  const { nodes, materials } = useGLTF('/scene.gltf')
+  const { nodes, materials } = useGLTF('/scene2.gltf')
   const meshRef = useRef()
   
   useFrame((state, delta) => (meshRef.current.rotation.y += delta/10))  
@@ -13,4 +13,4 @@ export default function Modeloearth(props) {
   )
 }
 
-useGLTF.preload('/scene.gltf')
+useGLTF.preload('/scene2.gltf')

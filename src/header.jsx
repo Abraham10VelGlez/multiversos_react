@@ -13,6 +13,7 @@ import Component10 from './component10';
 import Component11 from './component11';
 import Component12 from './component12';
 import Component13 from './component13';
+import Component14 from './component14';
 export default function App() {
   return (   
      /*<Router>*/        
@@ -31,6 +32,7 @@ export default function App() {
        <Route path="/world10" element={ <Component11></Component11> } />
        <Route path="/world111" element={ <Component12/> } />
        <Route path="/world13" element={ <Component13/> } />
+       <Route path="/world14" element={ <Component14/> } />
        {/* comodin para dar por defecto la pagina que no sirve */}
        <Route path="*" element={<NotFound></NotFound>} />
      </Routes>
@@ -60,6 +62,7 @@ function Home() {
     <li><Link to='/world10'>MUNDO 10</Link></li>
     <li><Link to='/world111'>MUNDO 11</Link></li>
     <li><Link to='/world13'>MUNDO 12</Link></li>
+    <li><Link to='/world14'>MUNDO GEOGRAFICO</Link></li>
   </ul>
   </>);
 }
